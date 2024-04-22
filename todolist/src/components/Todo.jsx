@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Button from '@mui/material/Button';
-
+import Form from './Form';
 
 export default function Todo() {
     const [currentColorVarient, setColorVarient] = useState('contained');
@@ -12,12 +12,15 @@ export default function Todo() {
             setColorVarient('outlined')
         }
     }
+
+    function addTask(name) {
+        return name = 'Kushal'
+    }
+ 
+
     return (
         <>
-            <div className="todo-input d-flex gap-2">
-                <input type="text" className="form-control" id="input" />
-                <Button variant="contained" className='btn'>Add</Button>
-            </div>
+            <Form onSubmit={addTask} addTask={addTask}/>
             <div className="options d-flex justify-content-center gap-3 py-4 flex-wrap">
                 <Button variant={currentColorVarient} onClick={handleColorVarient}>All</Button >
                 <Button variant='outlined'>Completed</Button >

@@ -30,7 +30,7 @@ export default function Buttons() {
                 if (nextIndex === 0) {
                     clearInterval(interval);
                 }
-                return nextIndex; a
+                return nextIndex;
             });
         }, 1000);
 

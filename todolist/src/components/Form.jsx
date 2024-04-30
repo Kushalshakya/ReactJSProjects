@@ -13,7 +13,7 @@ export default function Form({ addTasks }) {
     }
     return (
         <>
-            <form className="todo-input d-flex gap-2" onSubmit={handleForm}>
+            <form className="todo-input d-flex gap-2 pb-2" onSubmit={handleForm}>
                 <input type="text"
                     value={todo}
                     onChange={(e) => setTodo(e.target.value)}

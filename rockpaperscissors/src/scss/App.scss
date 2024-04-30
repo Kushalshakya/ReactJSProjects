@@ -50,6 +50,49 @@ body {
     }
 }
 
+.pointsTable{
+    right: 30px;
+    top: 170px;
+    width: 300px;
+    min-height: 250px;
+    max-height: 350px;
+    overflow-y: auto;
+    font-family: 'Poppins' !important;
+    .pointsTableContainer{
+        table{
+            thead{
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                td{
+                    font-size: 18px;
+                }
+            }
+            tbody{
+                td{
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+            }   
+        }
+    }
+    &::-webkit-scrollbar{
+        width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        cursor: pointer;
+        background-color: 	#abd8ea;
+        border-radius: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #63b7d8d7;
+    }
+}
+
+
 @media (max-width: 1100px) {
     .base{
         width: 90% !important;

@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
+import Globals from './Globals';
 
 export default function Buttons() {
-    const buttonImages = ['Rock', 'Hand', 'Paper'];
+    const buttonImages = ['Rock', 'Paper', 'Scissors'];
+    const [storeResult, setResult] = useState('Hand');
+
     useEffect(() => {
         const buttonEl = document.querySelectorAll('#button Button');
         buttonEl.forEach((btnClick) => {
@@ -10,14 +13,13 @@ export default function Buttons() {
                 btnClick.addEventListener('click', () => {
                     let result = btnClick.querySelector('img');
                     if (result) {
-                        console.log(result.getAttribute('data-value'));
+                        setResult(() => { return result.getAttribute('data-value') });
                     }
                 })
             }
             btnClick.hasEventListener = true;
         })
     }, [])
-
 
     const [wordIndex, setWordIndex] = useState(-1);
     const words = ['Rock', 'Paper', 'Scissors'];
@@ -58,12 +60,15 @@ export default function Buttons() {
             <div id="button" className="buttons py-3">
                 {
                     buttonImages.map((images, index) => (
-                        <Button sx={{ borderRadius: '50%' }} key={index} >
-                            <img src={`src/images/${images}.png`} width="100" data-value={images} />
+                        <Button sx={{ borderRadius: '50%' }} key={index} className={`${images}`} >
+                            <img src={`src/images/${images}.png`} alt={images} width="100" data-value={images} />
                         </Button>
                     ))
                 }
             </div>
+            {
+                storeResult !== '' && <Globals result={storeResult} />
+            }
             <button onClick={startCounter} className='btn play-btn bg-white px-4 fs-5'>Play</button>
         </>
     )

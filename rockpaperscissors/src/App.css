@@ -50,6 +50,42 @@ body {
   }
 }
 
+.pointsTable {
+  right: 30px;
+  top: 170px;
+  width: 300px;
+  min-height: 250px;
+  max-height: 350px;
+  overflow-y: auto;
+  font-family: "Poppins" !important;
+}
+.pointsTable .pointsTableContainer table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.pointsTable .pointsTableContainer table thead td {
+  font-size: 18px;
+}
+.pointsTable .pointsTableContainer table tbody td {
+  cursor: pointer;
+  font-size: 14px;
+}
+.pointsTable::-webkit-scrollbar {
+  width: 6px;
+}
+.pointsTable::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #abd8ea;
+  border-radius: 6px;
+}
+.pointsTable::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.pointsTable::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(99, 183, 216, 0.8431372549);
+}
+
 @media (max-width: 1100px) {
   .base {
     width: 90% !important;

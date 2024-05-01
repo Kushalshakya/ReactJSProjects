@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
-import Globals from './Globals';
 
 export default function Buttons() {
     const buttonImages = ['Rock', 'Paper', 'Scissors'];
@@ -66,9 +65,9 @@ export default function Buttons() {
                     ))
                 }
             </div>
-            {
+            {/* {
                 storeResult !== '' && <Globals result={storeResult} />
-            }
+            } */}
             <button onClick={startCounter} className='btn play-btn bg-white px-4 fs-5'>Play</button>
         </>
     )

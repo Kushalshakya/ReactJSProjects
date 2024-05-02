@@ -68,7 +68,6 @@ export default function Buttons() {
             {/* {
                 storeResult !== '' && <Globals result={storeResult} />
             } */}
-            <button onClick={startCounter} className='btn play-btn bg-white px-4 fs-5'>Play</button>
         </>
     )
 }

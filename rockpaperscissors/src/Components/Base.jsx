@@ -2,9 +2,10 @@ import React from 'react';
 
 export default function Base(props) {
     const imgURL = ['Rock', 'Paper', 'Scissors'];
-    console.log(props.botInput)
     return (
         <>
+        {imgURL[props.botInput]}
+        
             <div id="base" className="base w-50 h-50 rounded overflow-hidden">
                 <div className="base-container">
                     <img src="/src/images/Rock-gesture.png" alt="Rock-gesture" className='left' />

@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #153448 !important;
+}
+
+.app .app-container {
+  width: 300px;
+  height: 300px;
+}
+.app .app-container .box {
+  width: 100px;
+  border: 1px solid #3C5B6F;
+  height: 100px;
+}
+
+/*# sourceMappingURL=App.css.map */

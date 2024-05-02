@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primaryBackground: #153448;
+$secondaryBackground: #3C5B6F;
+
+body{
+    background-color: $primaryBackground !important;
+}
+
+.app{
+    .app-container{
+        width: 300px;
+        height: 300px;
+        .box{
+            width: 100px;
+            border: 1px solid $secondaryBackground ;
+            height: 100px;
+            // background-color: $secondaryBackground !important;
+        }
+    }
+}

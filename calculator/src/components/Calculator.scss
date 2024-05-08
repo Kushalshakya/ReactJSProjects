@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.calculator{
+    .calculator-container{
+        font-family: 'Poppins';
+        width: 360px;
+        height: auto;
+        background-color: #111A25;
+        .calculator-display{
+            width: 100%;
+            background: #F4F4F4;
+            padding: 6px 0 2px 0;
+        }
+        .calculator-keys{
+            Button{
+                font-family: 'Poppins';
+                font-size: 16px;
+                padding: 10px 0;
+                margin: 2px;
+            }
+            .numbers{
+                width: calc(93% / 3);
+            }
+            .operations{
+                width: calc(92% / 4);
+            }
+            .calculate{
+                height: 100px;
+                background-color: #fff;
+                color: #000;
+            }
+            .scientific{
+                width: calc(92% / 3);
+            }
+        }
+    }
+}

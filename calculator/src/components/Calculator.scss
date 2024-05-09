@@ -2,7 +2,7 @@
 .calculator{
     .calculator-container{
         font-family: 'Poppins';
-        width: 360px;
+        width: 300px;
         height: auto;
         background-color: #111A25;
         .calculator-display{
@@ -18,7 +18,7 @@
                 margin: 2px;
             }
             .numbers{
-                width: calc(93% / 3);
+                width: calc(92% / 4);
             }
             .operations{
                 width: calc(92% / 4);
